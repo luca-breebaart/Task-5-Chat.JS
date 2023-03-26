@@ -33,19 +33,19 @@ function App() {
                 parseFloat(carData?.widthMm?.replace(",", ".")),
                 parseFloat(carData?.wheelbaseMm?.replace(",", ".")),
                 parseFloat(carData?.wheelbaseMm?.replace(",", "."))
-                
+
             ],
             backgroundColor: [
                 '#FF6384',
                 '#36A2EB',
                 '#FFCE56'
-          
+
             ],
             hoverBackgroundColor: [
                 '#FF6384',
                 '#36A2EB',
                 '#FFCE56'
-          
+
             ]
         }],
     };
@@ -58,9 +58,11 @@ function App() {
         <div className="App">
 
             <nav className="topnav">
+
                 <NavLink exact to="/" activeClassName="active">Home</NavLink>
                 <NavLink to="/ChartTwo" activeClassName="active">ChartTwo</NavLink>
                 <NavLink to="/ChartThree" activeClassName="active">ChartThree</NavLink>
+                <NavLink to="/ChartThree" activeClassName="active">ChartFour</NavLink>
 
             </nav>
             {carData.cityFuelPer100KmL && carData.highwayFuelPer100KmL && carData.mixedFuelConsumptionPer100KmL ? (
